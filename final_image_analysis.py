@@ -1,5 +1,3 @@
-#By: Anoushka Lakshmi
-
 import cv2 # Imports OpenCV library for image processing 
 import re # Imports regular expressuion for pattern finding
 import pandas as pd # Imports pandas library for data analysis
@@ -164,7 +162,7 @@ def update_legend():    # Defines function for text in legend
 
 #Save to excel
 def save_measurements_to_excel():   # Defines function to save measurements from legent to Excel file  
-    excel_path = r"C:\Users\anous\Downloads\133_subject_prosthetic_measurement_data.xlsx"   # defines path using Excel file path
+    excel_path = r"C:\Users\user\Downloads\133_subject_prosthetic_measurement_data.xlsx"   # defines path using Excel file path
     df = pd.read_excel(excel_path)  # Stores the read Excel information into dataframe "df"
 
     column_name = "Gen Left B (cm)"  # Defines Excel column name
@@ -210,7 +208,7 @@ def click_event(event, x, y, flags, param): # Defines click event function for c
             
             cv2.imshow('Image', result) # Depicts resulting image
 
-image_path = r"C:\Users\anous\Downloads\Left B.jpeg"    # Loads image using file path
+image_path = r"C:\Users\user\Downloads\Left B.jpeg"    # Loads image using file path
 image = cv2.imread(image_path)  # Stores read image into variable "image"
 
 if image is None:   # If image not loaded properly:
